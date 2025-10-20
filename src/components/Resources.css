@@ -85,29 +85,35 @@
   margin-bottom: 1.5rem;
 }
 
-.download-btn {
-  display: inline-block;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 0.75rem 2rem;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.download-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
-}
-
 .org-chart-preview img,
-.values-preview img {
+.values-preview img,
+.cycle-preview img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   margin-top: 1rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 10px;
+  border-left: 4px solid #4caf50;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info strong {
+  color: #4caf50;
 }
 
 @media (max-width: 768px) {
