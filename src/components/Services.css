@@ -118,16 +118,7 @@
   color: #2c5282;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
-  padding-left: 1rem;
-  position: relative;
-}
-
-.service-details li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #48bb78;
-  font-weight: bold;
+  padding-left: 0;
 }
 
 @media (max-width: 768px) {
@@ -138,6 +129,8 @@
 
   .service-card {
     padding: 1.5rem;
+    width: 100%;
+    max-width: none;
   }
 
   .services h2 {

@@ -5,39 +5,36 @@ const Contact = () => {
     <section className="contact" id="contact">
       <div className="container">
         <h2>연락처 & 오시는 길</h2>
-        <div className="contact-content">
-          <div className="contact-info">
-            <div className="info-item">
-              <h3>📞 연락처</h3>
-              <p>
-                <strong>전화:</strong> <a href="tel:010-6549-8765">010-6549-8765</a>
-              </p>
-              <p>
-                <strong>이메일:</strong> <a href="mailto:nzin4x@gmail.com">nzin4x@gmail.com</a>
-              </p>
-            </div>
-            
-            <div className="info-item">
-              <h3>📍 주소</h3>
-              <p>서울 강남구 테헤란로 406</p>
-              <p>샹제리제타워 A동 C111호</p>
-            </div>
-            
-            <div className="info-item">
-              <h3>👨‍💼 조합 정보</h3>
-              <p>사회적협동조합 가치로운</p>
-              <p>대표: 전승호</p>
-            </div>
-            
-            <div className="info-item">
-              <h3>🕒 운영시간</h3>
-              <p>평일: 09:00 - 18:00</p>
-              <p>토요일: 09:00 - 13:00</p>
-              <p>일요일, 공휴일: 휴무</p>
-            </div>
+        <p className="contact-subtitle">
+          사회적협동조합 가치로운과 함께하세요
+        </p>
+        <div className="contact-grid">
+          <div className="contact-card">
+            <h3>📞 연락처</h3>
+            <p><strong>전화:</strong> <a href="tel:010-6549-8765">010-6549-8765</a></p>
+            <p><strong>이메일:</strong> <a href="mailto:nzin4x@gmail.com">nzin4x@gmail.com</a></p>
           </div>
           
-          <div className="contact-map">
+          <div className="contact-card">
+            <h3>📍 주소</h3>
+            <p>서울 강남구 테헤란로 406</p>
+            <p>샹제리제타워 A동 C111호</p>
+          </div>
+          
+          <div className="contact-card">
+            <h3>👨‍💼 조합 정보</h3>
+            <p>사회적협동조합 가치로운</p>
+            <p>대표: 전승호</p>
+          </div>
+          
+          <div className="contact-card">
+            <h3>🕒 운영시간</h3>
+            <p>평일: 09:00 - 18:00</p>
+            <p>토요일: 09:00 - 13:00</p>
+            <p>일요일, 공휴일: 휴무</p>
+          </div>
+          
+          <div className="contact-card map-card">
             <h3>🗺️ 오시는 길</h3>
             <img src="/images/map.png" alt="오시는 길 지도" className="map-image" />
             <div className="map-info">
@@ -47,7 +44,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="contact-form">
+          <div className="contact-card form-card">
             <h3>문의하기</h3>
             <form>
               <div className="form-group">

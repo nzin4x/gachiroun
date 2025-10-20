@@ -1,6 +1,6 @@
 .contact {
   padding: 6rem 0;
-  background: rgba(248, 249, 250, 0.9);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 250, 0.9) 100%);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -15,11 +15,10 @@
   right: 0;
   bottom: 0;
   background: url('/images/floral-pattern.svg') no-repeat;
-  background-position: bottom right;
+  background-position: top right;
   background-size: 60% auto;
-  opacity: 0.12;
+  opacity: 0.15;
   z-index: 1;
-  transform: rotate(180deg);
 }
 
 .contact .container {
@@ -30,48 +29,88 @@
 .contact h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: #2c5282;
 }
 
-.contact-content {
+.contact-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.info-item {
+.contact-card {
   background: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
   border: 2px solid rgba(102, 126, 234, 0.1);
   backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
 }
 
-.info-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.15);
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+  background: rgba(255, 255, 255, 1);
+  border-color: rgba(102, 126, 234, 0.3);
 }
 
-.info-item h3 {
-  color: #2c5282;
+.contact-card h3 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  color: #2c5282;
 }
 
-.info-item p {
-  margin: 0.5rem 0;
+.contact-card p {
   color: #666;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.contact-card a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  color: #66bb6a;
+}
+
+.map-card {
+  grid-column: span 2;
+}
+
+.map-card .map-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-info p {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+
+.form-card {
+  grid-column: span 2;
+  text-align: left;
 }
 
 .info-item a {
@@ -128,15 +167,19 @@
   color: white;
   padding: 1rem 2rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
   width: 100%;
+  box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
 }
 
 .submit-btn:hover {
   background: #38a169;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
 }
 
 .contact-map {
@@ -170,20 +213,23 @@
 }
 
 @media (max-width: 768px) {
-  .contact-content {
+  .contact-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: none;
   }
 
   .contact h2 {
     font-size: 2rem;
   }
 
-  .contact-form {
-    padding: 1.5rem;
-  }
-  
-  .contact-map {
-    padding: 1.5rem;
+  .contact-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 }

@@ -53,10 +53,11 @@
 }
 
 .volunteer-info h3 {
-  color: #2c5282;
+  color: #4caf50;
   margin-bottom: 2rem;
   font-size: 1.8rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .volunteer-types {
@@ -69,22 +70,24 @@
   background: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.1);
+  box-shadow: 0 6px 25px rgba(76, 175, 80, 0.1);
   transition: all 0.3s ease;
-  border: 2px solid rgba(102, 126, 234, 0.1);
+  border: 2px solid rgba(76, 175, 80, 0.1);
   backdrop-filter: blur(10px);
+  width: 100%;
 }
 
 .volunteer-type:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.2);
-  border-color: rgba(102, 126, 234, 0.3);
+  box-shadow: 0 15px 35px rgba(76, 175, 80, 0.2);
+  border-color: rgba(76, 175, 80, 0.3);
 }
 
 .volunteer-type h4 {
-  color: #2c5282;
+  color: #4caf50;
   margin-bottom: 1rem;
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .volunteer-type p {
@@ -107,7 +110,7 @@
 
 .volunteer-type li::before {
   content: "•";
-  color: #2c5282;
+  color: #4caf50;
   position: absolute;
   left: 0;
 }
@@ -118,13 +121,15 @@
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   height: fit-content;
+  width: 100%;
 }
 
 .volunteer-form h3 {
-  color: #2c5282;
+  color: #4caf50;
   margin-bottom: 2rem;
   font-size: 1.5rem;
   text-align: center;
+  font-weight: 600;
 }
 
 .form-group {
@@ -185,11 +190,24 @@
     font-size: 2rem;
   }
 
+  .volunteer-types {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
   .volunteer-form {
     padding: 1.5rem;
+    width: 100%;
+    max-width: none;
   }
 
   .volunteer-type {
     padding: 1.5rem;
+    width: 100%;
+    max-width: none;
+  }
+
+  .volunteer-info {
+    width: 100%;
   }
 }

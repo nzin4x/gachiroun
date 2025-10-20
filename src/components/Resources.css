@@ -124,6 +124,8 @@
 
   .resource-card {
     padding: 1.5rem;
+    width: 100%;
+    max-width: none;
   }
 
   .resources h2 {

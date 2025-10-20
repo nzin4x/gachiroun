@@ -168,20 +168,24 @@
   }
 
   .btn {
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
   }
 
   .placeholder-image {
     height: 200px;
+    width: 100%;
   }
 
   .hero-stats {
     grid-template-columns: 1fr;
     gap: 1rem;
+    width: 100%;
   }
 
   .stat-item {
     padding: 1rem;
+    width: 100%;
   }
 
   .stat-number {

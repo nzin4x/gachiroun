@@ -240,7 +240,7 @@
   .philosophy-vision {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    justify-items: center;
+    justify-items: stretch;
   }
 
   .meaning-card,
@@ -248,7 +248,7 @@
   .vision-card {
     padding: 1.5rem;
     height: 240px;
-    max-width: 400px;
+    max-width: none;
     width: 100%;
   }
 
@@ -290,7 +290,7 @@
   .vision-card {
     height: 220px;
     padding: 1.2rem;
-    max-width: 350px;
+    max-width: none;
     width: 100%;
   }
 

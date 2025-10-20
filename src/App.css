@@ -184,3 +184,27 @@ p {
   transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
 }
+
+/* 모바일 전체 너비 강제 적용 */
+@media (max-width: 768px) {
+  .meaning-card,
+  .philosophy-card,
+  .vision-card,
+  .service-card,
+  .resource-card,
+  .volunteer-form,
+  .volunteer-type,
+  .contact-form,
+  .contact-map,
+  .stat-item {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
