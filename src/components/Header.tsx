@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <img src="/images/logo.svg" alt="사회적협동조합 가치로운" />
+          <img src="/images/logo.png" alt="사회적협동조합 가치로운" />
         </div>
         
         <button 
