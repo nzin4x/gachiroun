@@ -12,17 +12,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
-    url('/images/floral-left-top.svg'),
-    url('/images/floral-right-bottom.svg');
-  background-position: 
-    top left,
-    bottom right;
-  background-repeat: no-repeat;
-  background-size: 
-    40% auto,
-    40% auto;
-  opacity: 0.3;
+  background: url('/images/floral-pattern.svg') no-repeat;
+  background-position: center;
+  background-size: 80% auto;
+  opacity: 0.1;
   pointer-events: none;
   z-index: 1;
 }

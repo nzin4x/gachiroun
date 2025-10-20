@@ -19,11 +19,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/images/floral-left-top.svg') no-repeat top left,
-              url('/images/floral-right-bottom.svg') no-repeat bottom right;
-  background-size: 250px auto, 350px auto;
-  opacity: 0.4;
+  background: url('/images/floral-pattern.svg') no-repeat center,
+              url('/images/floral-pattern.svg') no-repeat top left,
+              url('/images/floral-pattern.svg') no-repeat bottom right;
+  background-size: 60% auto, 40% auto, 45% auto;
+  opacity: 0.15;
   z-index: 1;
+  transform: scale(1.1);
 }
 
 .hero-content {
