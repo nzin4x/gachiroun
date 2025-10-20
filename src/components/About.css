@@ -1,109 +1,267 @@
 .about {
-  padding: 4rem 0;
-  background: #f8f9fa;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f0fff4 0%, #f7fafc 50%, #edf2f7 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-.container {
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    url('/images/floral-left-top.svg'),
+    url('/images/floral-right-bottom.svg');
+  background-position: 
+    top left,
+    bottom right;
+  background-repeat: no-repeat;
+  background-size: 
+    40% auto,
+    40% auto;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about .container {
+  position: relative;
+  z-index: 2;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .about h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #2c5282;
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  color: #4caf50;
+  font-weight: 700;
 }
 
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-
-.about-text h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  color: #666;
-}
-
-.mission-vision {
+/* 의미 섹션 */
+.meaning-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin: 2rem 0;
+  margin-bottom: 3rem;
 }
 
-.mission, .vision {
-  padding: 1.5rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 10px;
+.meaning-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.1);
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.mission h4, .vision h4 {
-  font-size: 1.3rem;
+.meaning-card:hover {
+  transform: translateY(-5px);
+}
+
+.meaning-card h3 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #ffd700;
+  color: #4caf50;
 }
 
-.mission p, .vision p {
-  margin: 0;
-  font-size: 1rem;
+.meaning-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* 철학과 비전 */
+.philosophy-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.philosophy-card, .vision-card {
+  background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(76, 175, 80, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.philosophy-card:hover, .vision-card:hover {
+  transform: translateY(-5px);
+}
+
+.philosophy-card h3, .vision-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.philosophy-quote {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #fff3cd;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.philosophy-card p, .vision-card p {
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
+/* 순환구조 핵심 섹션 */
+.cycle-core-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.cycle-core-section h3 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.cycle-model {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.cycle-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(76, 175, 80, 0.2);
+  background: white;
+  padding: 20px;
+}
+
+/* 3대 주요 사업 */
+.main-services {
+  margin-top: 4rem;
+}
+
+.main-services h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(76, 175, 80, 0.2);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h4 {
+  font-size: 1.3rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.service-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 반응형 디자인 */
 @media (max-width: 768px) {
-  .mission-vision {
+  .about h2 {
+    font-size: 2.2rem;
+  }
+
+  .meaning-section,
+  .philosophy-vision {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+
+  .meaning-card,
+  .philosophy-card,
+  .vision-card {
+    padding: 1.5rem;
+  }
+
+  .cycle-image {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .about::before {
+    background-size: 30% auto, 30% auto;
   }
 }
 
-.about-image {
-  display: flex;
-  justify-content: center;
-}
+@media (max-width: 480px) {
+  .about {
+    padding: 4rem 0;
+  }
 
-.placeholder-image {
-  background: #e2e8f0;
-  border: 2px dashed #cbd5e0;
-  border-radius: 10px;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: #666;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    grid-template-columns: 1fr;
+  .about .container {
+    padding: 0 1rem;
   }
 
   .about h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
 
-  .about-text h3 {
-    font-size: 1.5rem;
-  }
-
-  .placeholder-image {
-    height: 250px;
+  .cycle-core-section h3,
+  .main-services h3 {
+    font-size: 1.6rem;
   }
 }

@@ -2,34 +2,77 @@ import './About.css'
 
 const About = () => {
   return (
-    <section className="about" id="about">
+    <section id="about" className="about">
       <div className="container">
-        <h2>가치로운 소개</h2>
-        <div className="about-content">
-          <div className="about-text">
-            <h3>사회적협동조합 가치로운</h3>
-            <div className="mission-vision">
-              <div className="mission">
-                <h4>🎯 미션</h4>
-                <p>존중받는 활동지원사, 만족하는 이용자, 함께하는 지역사회</p>
-              </div>
-              <div className="vision">
-                <h4>🌟 비전</h4>
-                <p>개인별 맞춤서비스, 중등장애인 지역사회 자립, 지역사회 네트워크</p>
-              </div>
-            </div>
+        <h2>✨ 가치로운이란?</h2>
+        
+        {/* 가치로운 의미 섹션 */}
+        <div className="meaning-section">
+          <div className="meaning-card">
+            <h3>💛 의미</h3>
             <p>
-              사회적협동조합 가치로운은 지역사회 내 장애인과 저소득 가정을 위한 
-              다양한 사회적 가치를 실현하는 사회적협동조합입니다.
-            </p>
-            <p>
-              물품 나눔, 장애인 자조모임, 힐링여행, 서울 디딤돌 사업 거점기관 운영 등 
-              지역사회와 함께하는 활동을 통해 더불어 사는 사회적 가치를 실현해가고 있습니다.
+              '가치로운'은 <strong>'가치'와 '같이'</strong>의 결합으로,<br/>
+              사람과 지역이 함께 성장하는 동행의 마음을 담습니다.
             </p>
           </div>
-          <div className="about-image">
-            <div className="placeholder-image">
-              <span>가치로운 활동 사진</span>
+          
+          <div className="meaning-card">
+            <h3>🌿 상징</h3>
+            <p>
+              초성 ㄱ과 ㅊ은 사람의 형상으로,<br/>
+              함께함과 연결을 뜻합니다.<br/>
+              🧡은 열정, 💛은 희망과 즐거움을 상징합니다.
+            </p>
+          </div>
+        </div>
+
+        <div className="philosophy-vision">
+          <div className="philosophy-card">
+            <h3>� 철학</h3>
+            <p className="philosophy-quote">"우리 같이 가치롭게"</p>
+            <p>모두가 존중받으며 살아가는 세상을 만듭니다.</p>
+          </div>
+          
+          <div className="vision-card">
+            <h3>� 비전</h3>
+            <p>
+              어르신 → 장애인 → 아동·청소년 → 지역사회로 이어지는<br/>
+              복지 순환 구조로 상생과 배려의 공동체를 실현합니다
+            </p>
+          </div>
+        </div>
+
+        {/* 순환구조 핵심 섹션 */}
+        <div className="cycle-core-section">
+          <h3>🔄 복지 순환구조의 핵심</h3>
+          <div className="cycle-model">
+            <img src="/images/cycle-model.png" alt="가치로운의 순환구조" className="cycle-image" />
+          </div>
+        </div>
+
+        {/* 3대 주요 사업 */}
+        <div className="main-services">
+          <h3>🏠 3개의 주요 사업</h3>
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="service-icon">👴</div>
+              <h4>재가방문요양 사업</h4>
+              <p>어르신들의 일상생활을 지원하여<br/>건강하고 안전한 노후를 돕습니다</p>
+              <img src="/images/business-1-adult.png" alt="재가방문요양" className="service-image" />
+            </div>
+            
+            <div className="service-card">
+              <div className="service-icon">♿</div>
+              <h4>장애인활동지원 사업</h4>
+              <p>장애인의 자립생활과 사회참여를<br/>적극적으로 지원합니다</p>
+              <img src="/images/business-unabled.png" alt="장애인활동지원" className="service-image" />
+            </div>
+            
+            <div className="service-card">
+              <div className="service-icon">👶</div>
+              <h4>아동청소년 성장지원 사업</h4>
+              <p>미래 세대의 건강한 성장과<br/>교육 기회를 제공합니다</p>
+              <img src="/images/business-children.png" alt="아동청소년 성장지원" className="service-image" />
             </div>
           </div>
         </div>

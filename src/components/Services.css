@@ -1,9 +1,28 @@
 .services {
-  padding: 4rem 0;
-  background: white;
+  padding: 6rem 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 250, 0.9) 100%);
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 200px;
+  height: 150px;
+  background: url('/images/base-theme-left-top.png') no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.services .container {
+  position: relative;
+  z-index: 2;
 }
 
 .services h2 {
@@ -32,18 +51,39 @@
 }
 
 .service-card {
-  background: #f8f9fa;
+  background: rgba(255, 255, 255, 0.9);
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid #e2e8f0;
+  border: 2px solid rgba(102, 126, 234, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  background: white;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+  background: rgba(255, 255, 255, 1);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.1);
 }
 
 .service-icon {
@@ -60,7 +100,33 @@
 .service-card p {
   color: #666;
   line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.service-details {
+  margin-top: 1rem;
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
+}
+
+.service-details li {
+  color: #2c5282;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.service-details li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #48bb78;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

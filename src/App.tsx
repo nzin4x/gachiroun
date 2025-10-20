@@ -1,7 +1,8 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Services from './components/Services'
 import About from './components/About'
+import Services from './components/Services'
+import Resources from './components/Resources'
 import Volunteer from './components/Volunteer'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Resources />
       <Volunteer />
       <Contact />
       <Footer />

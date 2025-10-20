@@ -1,0 +1,43 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e8;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#c8e6c9;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#a5d6a7;stop-opacity:0.3" />
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#66bb6a;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#4caf50;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 큰 꽃 -->
+  <g transform="translate(80,60)">
+    <circle cx="0" cy="0" r="25" fill="url(#flowerGradient)"/>
+    <circle cx="-15" cy="-15" r="12" fill="url(#flowerGradient)"/>
+    <circle cx="15" cy="-15" r="12" fill="url(#flowerGradient)"/>
+    <circle cx="-15" cy="15" r="12" fill="url(#flowerGradient)"/>
+    <circle cx="15" cy="15" r="12" fill="url(#flowerGradient)"/>
+    <circle cx="0" cy="0" r="8" fill="#fff8e1" fill-opacity="0.8"/>
+  </g>
+  
+  <!-- 작은 꽃들 -->
+  <g transform="translate(180,40)">
+    <circle cx="0" cy="0" r="15" fill="url(#flowerGradient)"/>
+    <circle cx="-8" cy="-8" r="6" fill="url(#flowerGradient)"/>
+    <circle cx="8" cy="-8" r="6" fill="url(#flowerGradient)"/>
+    <circle cx="-8" cy="8" r="6" fill="url(#flowerGradient)"/>
+    <circle cx="8" cy="8" r="6" fill="url(#flowerGradient)"/>
+    <circle cx="0" cy="0" r="4" fill="#fff8e1" fill-opacity="0.9"/>
+  </g>
+  
+  <!-- 잎사귀들 -->
+  <ellipse cx="40" cy="120" rx="20" ry="8" fill="url(#leafGradient)" transform="rotate(30 40 120)"/>
+  <ellipse cx="220" cy="80" rx="15" ry="6" fill="url(#leafGradient)" transform="rotate(-45 220 80)"/>
+  <ellipse cx="140" cy="140" rx="18" ry="7" fill="url(#leafGradient)" transform="rotate(60 140 140)"/>
+  
+  <!-- 작은 장식 꽃들 -->
+  <circle cx="250" cy="120" r="8" fill="#e1f5fe" fill-opacity="0.6"/>
+  <circle cx="60" cy="30" r="6" fill="#f3e5f5" fill-opacity="0.5"/>
+  <circle cx="200" cy="160" r="5" fill="#e8f5e8" fill-opacity="0.7"/>
+</svg>

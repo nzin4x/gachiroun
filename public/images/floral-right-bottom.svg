@@ -1,0 +1,59 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowerGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8bbd9;stop-opacity:0.4" />
+      <stop offset="50%" style="stop-color:#f48fb1;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ec407a;stop-opacity:0.2" />
+    </linearGradient>
+    <linearGradient id="leafGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#81c784;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#66bb6a;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 메인 큰 꽃 -->
+  <g transform="translate(280,180)">
+    <circle cx="0" cy="0" r="35" fill="url(#flowerGradient2)"/>
+    <circle cx="-20" cy="-20" r="18" fill="url(#flowerGradient2)"/>
+    <circle cx="20" cy="-20" r="18" fill="url(#flowerGradient2)"/>
+    <circle cx="-20" cy="20" r="18" fill="url(#flowerGradient2)"/>
+    <circle cx="20" cy="20" r="18" fill="url(#flowerGradient2)"/>
+    <circle cx="0" cy="-30" r="15" fill="url(#flowerGradient2)"/>
+    <circle cx="0" cy="30" r="15" fill="url(#flowerGradient2)"/>
+    <circle cx="-30" cy="0" r="15" fill="url(#flowerGradient2)"/>
+    <circle cx="30" cy="0" r="15" fill="url(#flowerGradient2)"/>
+    <circle cx="0" cy="0" r="12" fill="#fff3e0" fill-opacity="0.8"/>
+  </g>
+  
+  <!-- 중간 크기 꽃 -->
+  <g transform="translate(150,80)">
+    <circle cx="0" cy="0" r="20" fill="url(#flowerGradient2)"/>
+    <circle cx="-12" cy="-12" r="10" fill="url(#flowerGradient2)"/>
+    <circle cx="12" cy="-12" r="10" fill="url(#flowerGradient2)"/>
+    <circle cx="-12" cy="12" r="10" fill="url(#flowerGradient2)"/>
+    <circle cx="12" cy="12" r="10" fill="url(#flowerGradient2)"/>
+    <circle cx="0" cy="0" r="6" fill="#fff8e1" fill-opacity="0.9"/>
+  </g>
+  
+  <!-- 잎사귀들 -->
+  <ellipse cx="320" cy="80" rx="25" ry="10" fill="url(#leafGradient2)" transform="rotate(-30 320 80)"/>
+  <ellipse cx="100" cy="200" rx="20" ry="8" fill="url(#leafGradient2)" transform="rotate(45 100 200)"/>
+  <ellipse cx="200" cy="250" rx="22" ry="9" fill="url(#leafGradient2)" transform="rotate(-60 200 250)"/>
+  <ellipse cx="50" cy="120" rx="18" ry="7" fill="url(#leafGradient2)" transform="rotate(15 50 120)"/>
+  
+  <!-- 작은 장식 요소들 -->
+  <circle cx="350" cy="50" r="10" fill="#e1f5fe" fill-opacity="0.5"/>
+  <circle cx="80" cy="40" r="8" fill="#f3e5f5" fill-opacity="0.4"/>
+  <circle cx="120" cy="280" r="6" fill="#e8f5e8" fill-opacity="0.6"/>
+  <circle cx="380" cy="250" r="7" fill="#fff3e0" fill-opacity="0.5"/>
+  
+  <!-- 추가 작은 꽃들 -->
+  <g transform="translate(60,160)">
+    <circle cx="0" cy="0" r="12" fill="url(#flowerGradient2)"/>
+    <circle cx="-6" cy="-6" r="5" fill="url(#flowerGradient2)"/>
+    <circle cx="6" cy="-6" r="5" fill="url(#flowerGradient2)"/>
+    <circle cx="-6" cy="6" r="5" fill="url(#flowerGradient2)"/>
+    <circle cx="6" cy="6" r="5" fill="url(#flowerGradient2)"/>
+    <circle cx="0" cy="0" r="3" fill="#fff8e1" fill-opacity="0.9"/>
+  </g>
+</svg>

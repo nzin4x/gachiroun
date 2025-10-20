@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <img src="/images/logo.png" alt="사회적협동조합 가치로운" />
+          <img src="/images/main-logo.png" alt="사회적협동조합 가치로운" />
         </div>
         
         <button 
@@ -26,9 +26,9 @@ const Header = () => {
             <li><a href="#home">홈</a></li>
             <li><a href="#about">가치로운 소개</a></li>
             <li><a href="#services">사업안내</a></li>
+            <li><a href="#resources">자료실</a></li>
             <li><a href="#volunteer">봉사신청</a></li>
-            <li><a href="#notice">알림공간</a></li>
-            <li><a href="#location">오시는길</a></li>
+            <li><a href="#contact">오시는길</a></li>
           </ul>
         </nav>
       </div>

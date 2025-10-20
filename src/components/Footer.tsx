@@ -52,7 +52,6 @@ const Footer = () => {
           
           <div className="copyright">
             <p>Copyright ⓒ {currentYear} 사회적협동조합 가치로운 All rights reserved.</p>
-            <p>좋은세상이웃사람들</p>
           </div>
         </div>
       </div>

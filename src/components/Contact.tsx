@@ -37,6 +37,16 @@ const Contact = () => {
             </div>
           </div>
           
+          <div className="contact-map">
+            <h3>🗺️ 오시는 길</h3>
+            <img src="/images/map.png" alt="오시는 길 지도" className="map-image" />
+            <div className="map-info">
+              <p><strong>지하철:</strong> 2호선 강남역 12번 출구 도보 5분</p>
+              <p><strong>버스:</strong> 강남역 정류장 하차</p>
+              <p><strong>주차:</strong> 건물 지하 주차장 이용 가능</p>
+            </div>
+          </div>
+          
           <div className="contact-form">
             <h3>문의하기</h3>
             <form>

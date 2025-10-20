@@ -1,0 +1,131 @@
+.resources {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.9) 0%, rgba(240, 242, 247, 0.8) 100%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.resources::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  width: 180px;
+  height: 120px;
+  background: url('/images/base-theme-left-top.png') no-repeat;
+  background-size: contain;
+  opacity: 0.08;
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+
+.resources .container {
+  position: relative;
+  z-index: 2;
+}
+
+.resources h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c5282;
+}
+
+.resources-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resource-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem;
+  border-radius: 25px;
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 2px solid rgba(102, 126, 234, 0.1);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.resource-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 25px 45px rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.resource-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.resource-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c5282;
+}
+
+.resource-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.download-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.org-chart-preview img,
+.values-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .resource-card {
+    padding: 1.5rem;
+  }
+
+  .resources h2 {
+    font-size: 2rem;
+  }
+
+  .resources-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
