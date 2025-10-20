@@ -12,13 +12,14 @@
 .footer::before {
   content: '';
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 200px;
-  height: 150px;
-  background: url('/images/base-theme-left-top.png') no-repeat;
-  background-size: contain;
-  opacity: 0.1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/floral-pattern.svg') no-repeat;
+  background-position: center;
+  background-size: 50% auto;
+  opacity: 0.08;
   z-index: 1;
 }
 

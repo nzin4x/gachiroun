@@ -10,14 +10,16 @@
 .contact::before {
   content: '';
   position: absolute;
-  top: 15%;
-  right: 5%;
-  width: 180px;
-  height: 120px;
-  background: url('/images/base-theme-right-bottom.png') no-repeat;
-  background-size: contain;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/floral-pattern.svg') no-repeat;
+  background-position: bottom right;
+  background-size: 60% auto;
   opacity: 0.12;
   z-index: 1;
+  transform: rotate(180deg);
 }
 
 .contact .container {

@@ -10,13 +10,14 @@
 .services::before {
   content: '';
   position: absolute;
-  top: 10%;
-  left: 5%;
-  width: 200px;
-  height: 150px;
-  background: url('/images/base-theme-left-top.png') no-repeat;
-  background-size: contain;
-  opacity: 0.1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/floral-pattern.svg') no-repeat;
+  background-position: top left;
+  background-size: 60% auto;
+  opacity: 0.15;
   z-index: 1;
 }
 

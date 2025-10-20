@@ -1,0 +1,120 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 그라디언트 정의 -->
+    <linearGradient id="roseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffb3d9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff80c4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff4da6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4caf50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2e7d32;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="stemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#66bb6a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#388e3c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 원형 패턴 -->
+  <circle cx="150" cy="120" r="3" fill="#ffb3d9" opacity="0.3"/>
+  <circle cx="680" cy="480" r="2" fill="#81c784" opacity="0.3"/>
+  <circle cx="50" cy="350" r="2.5" fill="#ffb3d9" opacity="0.2"/>
+  
+  <!-- 메인 플로럴 브랜치 1 (왼쪽 상단) -->
+  <g transform="translate(50, 80)">
+    <!-- 메인 줄기 -->
+    <path d="M20,50 Q80,40 140,80 Q200,120 250,100" 
+          stroke="url(#stemGradient)" stroke-width="3" fill="none" opacity="0.8"/>
+    
+    <!-- 장미 1 -->
+    <g transform="translate(100, 60)">
+      <circle cx="0" cy="0" r="18" fill="url(#roseGradient)" opacity="0.9"/>
+      <path d="M-12,-8 Q0,-15 12,-8 Q8,0 0,5 Q-8,0 -12,-8" fill="#ff4da6" opacity="0.7"/>
+      <path d="M-8,-4 Q0,-8 8,-4 Q4,0 0,3 Q-4,0 -8,-4" fill="#ffb3d9" opacity="0.8"/>
+    </g>
+    
+    <!-- 장미 2 -->
+    <g transform="translate(180, 90)">
+      <circle cx="0" cy="0" r="15" fill="url(#roseGradient)" opacity="0.8"/>
+      <path d="M-10,-6 Q0,-12 10,-6 Q6,0 0,4 Q-6,0 -10,-6" fill="#ff4da6" opacity="0.6"/>
+    </g>
+    
+    <!-- 잎사귀들 -->
+    <g transform="translate(70, 45)">
+      <ellipse cx="0" cy="0" rx="12" ry="6" fill="url(#leafGradient)" transform="rotate(-30)" opacity="0.8"/>
+      <path d="M-8,0 Q0,-3 8,0 Q0,3 -8,0" fill="#2e7d32" opacity="0.6"/>
+    </g>
+    
+    <g transform="translate(130, 75)">
+      <ellipse cx="0" cy="0" rx="10" ry="5" fill="url(#leafGradient)" transform="rotate(45)" opacity="0.7"/>
+    </g>
+    
+    <g transform="translate(200, 105)">
+      <ellipse cx="0" cy="0" rx="14" ry="7" fill="url(#leafGradient)" transform="rotate(-60)" opacity="0.8"/>
+    </g>
+  </g>
+  
+  <!-- 플로럴 브랜치 2 (오른쪽 하단) -->
+  <g transform="translate(500, 380)">
+    <!-- 곡선 줄기 -->
+    <path d="M20,80 Q-20,60 -60,40 Q-100,20 -140,50" 
+          stroke="url(#stemGradient)" stroke-width="3" fill="none" opacity="0.8"/>
+    
+    <!-- 장미 3 -->
+    <g transform="translate(-40, 50)">
+      <circle cx="0" cy="0" r="20" fill="url(#roseGradient)" opacity="0.9"/>
+      <path d="M-14,-9 Q0,-18 14,-9 Q9,0 0,6 Q-9,0 -14,-9" fill="#ff4da6" opacity="0.7"/>
+      <path d="M-9,-5 Q0,-10 9,-5 Q5,0 0,4 Q-5,0 -9,-5" fill="#ffb3d9" opacity="0.8"/>
+      <circle cx="0" cy="0" r="3" fill="#ff80c4" opacity="0.9"/>
+    </g>
+    
+    <!-- 작은 장미 4 -->
+    <g transform="translate(-100, 35)">
+      <circle cx="0" cy="0" r="12" fill="url(#roseGradient)" opacity="0.7"/>
+      <path d="M-8,-5 Q0,-10 8,-5 Q4,0 0,3 Q-4,0 -8,-5" fill="#ff4da6" opacity="0.6"/>
+    </g>
+    
+    <!-- 잎사귀들 -->
+    <g transform="translate(-20, 45)">
+      <ellipse cx="0" cy="0" rx="15" ry="8" fill="url(#leafGradient)" transform="rotate(20)" opacity="0.8"/>
+    </g>
+    
+    <g transform="translate(-70, 30)">
+      <ellipse cx="0" cy="0" rx="11" ry="6" fill="url(#leafGradient)" transform="rotate(-45)" opacity="0.7"/>
+    </g>
+    
+    <g transform="translate(-120, 45)">
+      <ellipse cx="0" cy="0" rx="13" ry="7" fill="url(#leafGradient)" transform="rotate(60)" opacity="0.8"/>
+    </g>
+  </g>
+  
+  <!-- 장식적인 작은 요소들 -->
+  <g transform="translate(300, 200)">
+    <!-- 작은 꽃봉오리들 -->
+    <circle cx="0" cy="0" r="6" fill="#ffb3d9" opacity="0.6"/>
+    <circle cx="50" cy="30" r="4" fill="#ff80c4" opacity="0.5"/>
+    <circle cx="100" cy="10" r="5" fill="#ffb3d9" opacity="0.6"/>
+    
+    <!-- 작은 잎사귀들 -->
+    <ellipse cx="25" cy="15" rx="8" ry="4" fill="#81c784" transform="rotate(30)" opacity="0.6"/>
+    <ellipse cx="75" cy="5" rx="6" ry="3" fill="#66bb6a" transform="rotate(-20)" opacity="0.5"/>
+  </g>
+  
+  <!-- 추가 장식 브랜치 (중앙) -->
+  <g transform="translate(350, 450)">
+    <path d="M0,0 Q30,-20 60,-10 Q90,0 120,-15" 
+          stroke="url(#stemGradient)" stroke-width="2" fill="none" opacity="0.6"/>
+    
+    <g transform="translate(30, -15)">
+      <circle cx="0" cy="0" r="8" fill="url(#roseGradient)" opacity="0.6"/>
+    </g>
+    
+    <g transform="translate(90, -5)">
+      <ellipse cx="0" cy="0" rx="9" ry="5" fill="url(#leafGradient)" transform="rotate(-30)" opacity="0.6"/>
+    </g>
+  </g>
+</svg>
