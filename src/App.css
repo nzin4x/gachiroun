@@ -157,7 +157,7 @@ p {
 
 /* Focus styles for accessibility */
 *:focus {
-  outline: 2px solid #667eea;
+  outline: 2px solid #48bb78;
   outline-offset: 2px;
 }
 

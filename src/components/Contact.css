@@ -120,11 +120,11 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #2c5282;
+  border-color: #48bb78;
 }
 
 .submit-btn {
-  background: #2c5282;
+  background: #48bb78;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -136,7 +136,7 @@
 }
 
 .submit-btn:hover {
-  background: #1e3a5f;
+  background: #38a169;
 }
 
 .contact-map {

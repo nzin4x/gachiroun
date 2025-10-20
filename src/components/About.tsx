@@ -28,13 +28,13 @@ const About = () => {
 
         <div className="philosophy-vision">
           <div className="philosophy-card">
-            <h3>� 철학</h3>
+            <h3>🌼 철학</h3>
             <p className="philosophy-quote">"우리 같이 가치롭게"</p>
             <p>모두가 존중받으며 살아가는 세상을 만듭니다.</p>
           </div>
           
           <div className="vision-card">
-            <h3>� 비전</h3>
+            <h3>🌻 비전</h3>
             <p>
               어르신 → 장애인 → 아동·청소년 → 지역사회로 이어지는<br/>
               복지 순환 구조로 상생과 배려의 공동체를 실현합니다

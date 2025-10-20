@@ -125,14 +125,15 @@
 }
 
 .btn-secondary {
-  background: transparent;
+  background: #48bb78;
   color: white;
-  border: 2px solid white;
+  border: 2px solid #48bb78;
 }
 
 .btn-secondary:hover {
-  background: white;
-  color: #667eea;
+  background: #38a169;
+  border-color: #38a169;
+  color: white;
 }
 
 .placeholder-image {
